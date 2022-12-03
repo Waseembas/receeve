@@ -40,8 +40,8 @@ jobs:
       run: zip -qq -r ./function.zip .
       #working-directory: artifact/publish
       
-    - name: Copy Cloudformation Template
-      run: cd iac
+   # - name: Copy Cloudformation Template
+   #   run: cd iac
     - uses: actions/upload-artifact@v3
       with:
         name: iac
@@ -75,7 +75,11 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-west-2
+          aws-region: us-east-1
+          
+          
+      - name: list folder
+        run: ls -altr
       
       - name: Deploy to AWS CloudFormation
         uses: aws-actions/aws-cloudformation-github-deploy@v1
