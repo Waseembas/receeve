@@ -8,7 +8,7 @@ on:
       BucketName:
         description: 'bucket name'
         required: true
-        default: 'reeceve-Test-waseem'
+        default: 'reeceve-test-waseem'
       HashKeyElementName:
         description: 'dynamo db primary id'
         required: true
