@@ -12,7 +12,7 @@ on:
       BucketName:
         description: 'bucket name'
         required: true
-        default: 'reeceve_Test_waseem'
+        default: 'reeceve-test-waseem'
 
   push:
     branches: [ main ]
