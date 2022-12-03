@@ -8,6 +8,7 @@ Parameters:
     ConstraintDescription: Must end with non-numeric character.
   LambdaHandlerPath:  
     Type: String
+    Default: index.handler
     Description: Path of a Lambda Handler. 
     AllowedPattern: ^.*[^0-9]$
     ConstraintDescription: Must end with non-numeric character.
