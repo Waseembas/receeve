@@ -68,11 +68,11 @@ Resources:
       #  S3Bucket: !Ref MainBucket  
   
 Outputs:
-  TableName:
-    Value: !Select [1, !Split ['/', !GetAtt DynamoDBTable.Arn]] 
-    Description: Table name of the newly created DynamoDB table'
-    Export:
-      Name: tablename
+  #TableName:
+  #  Value: !Select [1, !Split ['/', !GetAtt DynamoDBTable.Arn]] 
+  #  Description: Table name of the newly created DynamoDB table'
+  #  Export:
+  #    Name: tablename
 
   dynamoarn:
     Value: !GetAtt myDynamoDBTable.Arn
