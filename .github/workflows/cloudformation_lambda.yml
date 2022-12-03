@@ -80,7 +80,7 @@ jobs:
       - name: Deploy to AWS CloudFormation
         uses: aws-actions/aws-cloudformation-github-deploy@v1
         with:
-          name: cloudformation-demo
+          name: cloudformation-demo-lambda
           template: iac/lambda.yml
           parameter-overrides: >-
             EnvName=${{ inputs.EnvName }},
