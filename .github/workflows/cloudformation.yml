@@ -82,7 +82,7 @@ jobs:
         with:
           name: cloudformation-demo
           template: iac/lambda.yml
-          parameter-overrides: parameter-overrides: >-
+          parameter-overrides: >-
             "EnvName=${{ inputs.EnvName }}",
             "BucketName=${{ inputs.BucketName }}"
 
