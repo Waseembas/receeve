@@ -83,8 +83,8 @@ jobs:
           name: cloudformation-demo
           template: iac/lambda.yml
           parameter-overrides: >-
-            "EnvName=${{ inputs.EnvName }}",
-            "BucketName=${{ inputs.BucketName }}"
+            EnvName=${{ inputs.EnvName }},
+            BucketName=${{ inputs.BucketName }}
 
           no-fail-on-empty-changeset: "1"
           
