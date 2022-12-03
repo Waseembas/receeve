@@ -114,6 +114,8 @@ Resources:
                 Fn::ImportValue: !Sub MainBucketName
           TABLEARN:
                 Fn::ImportValue: !Sub dynamoarn
+          TABLENAME:      
+                Fn::ImportValue: !Sub TableName
 
 
 Outputs:
