@@ -69,7 +69,7 @@ Resources:
   
 Outputs:
   TableName:
-    Value: !Ref 'myDynamoDBTable'
+    Value: !Select [1, !Split ['/', !GetAtt DynamoDBTable.Arn]] 
     Description: Table name of the newly created DynamoDB table'
     Export:
       Name: tablename
