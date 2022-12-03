@@ -42,8 +42,8 @@ jobs:
           name: cloudformation-demo
           template: iac/dynomodb.yml
           parameter-overrides: >-
-            "BucketName=${{ inputs.BucketName }}",
-            "HashKeyElementName=${{ inputs.HashKeyElementName }}"
+            BucketName=${{ inputs.BucketName }},
+            HashKeyElementName=${{ inputs.HashKeyElementName }}
 
 
           no-fail-on-empty-changeset: "1"
