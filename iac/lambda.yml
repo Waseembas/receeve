@@ -12,6 +12,11 @@ Parameters:
     Description: Path of a Lambda Handler. 
     AllowedPattern: ^.*[^0-9]$
     ConstraintDescription: Must end with non-numeric character.
+  BucketName:
+    Type: String
+    Default: "my-unique-bucket-name-waseem"  
+    
+    
 Outputs:
   LambdaRoleARN:
     Description: Role for Lambda execution.
@@ -106,7 +111,7 @@ Resources:
             Fn::Sub: ${EnvName}
           TZ: UTC
           S3BUCKET: 
-                Fn::ImportValue: !Sub MainBucketName
+                Fn::ImportValue: !Sub BucketName
           TABLEARN:
                 Fn::ImportValue: !Sub dynamoarn
 
