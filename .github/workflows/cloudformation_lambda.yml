@@ -89,7 +89,7 @@ jobs:
           parameter-overrides: >-
             EnvName=${{ inputs.EnvName }},
             BucketName=${{ inputs.BucketName }}
-
           no-fail-on-empty-changeset: "1"
+          Requires capabilities: CAPABILITY_NAMED_IAM
           
   
