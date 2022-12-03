@@ -16,12 +16,9 @@ on:
     branches: [ main ]
 
 jobs:
-
-
   dynamo-deploy:
     runs-on: ubuntu-latest
-    environment: Test
-    needs: build
+    #environment: Test
     
     steps:
 
