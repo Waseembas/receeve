@@ -92,7 +92,7 @@ Resources:
       Description: LambdaFunctioni of nodejs18.x.
       Runtime: nodejs18.x
       Code:
-        S3Bucket: my-unique-bucket-name-waseem
+        S3Bucket: !Ref BucketName
         S3Key: function.zip
           
 
